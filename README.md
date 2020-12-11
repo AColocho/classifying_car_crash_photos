@@ -17,7 +17,7 @@ A dataset was found with 2398 photos that showed car crashes. The data set conta
 The data was not modified in any way. The storage of the data was the only thing that was changed. The data was separated into train and test sets.
 
 ## Data Exploration
-As stated earlier, images are in a 28x28 resolution. It is difficult to see them to the naked eye.
+As stated earlier, images are in a 28x28 resolution. It is difficult to see them without aid. 
 
 ![image1](images/test/crash/1789.jpg)
 
@@ -47,8 +47,8 @@ Base Model
 Greyscale Model
 ![greyscale](photos/greyscale.png)
 
-### Custom Testing
-The model with full RGB color was chosen because it was the best performing one. When it was tested with a small set of 8 photos, the model was biased towards classifying photos as car crashes. It had problems differentiating car crashes from traffic. 
+### Future Work
+The model with full RGB color was chosen because it was the best performing one. When it was tested with a small set of 8 photos, the model was biased towards classifying photos as car crashes. It had problems differentiating car crashes from traffic. The accuracy presented previously is the accuracy within the dataset used to train and test the model, but I do not forsee the accuracy holding in the real world. However, further training the model to understand the difference between car crashes and traffic is entirely possible and within reach.
 
 ## Conclusion
 Training software to recognize car crashes is within reach of current technology, and it can be implemented in a cost-effective way. This is concluded based on a small sample and test. However, an issue can arise with the model being biased towards car crashes. More resources might be needed to analyze if an alert is a credible one. This can be an issue because resources be might give where they are not needed and taken away from places that are needed. More training could eliminate this issue. Furthermore, the model being biased towards car crashes might be beneficial because emergency services can be proactive in reaching car crashes.
