@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DAISY</title>
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+
+<nav>
+  <div>
+    <a id="top-left" href="{{ url_for('main.welcome') }}">DAISY</a>
+  </div>
+</nav>
+
+<body>
+{% block content %}
+{% endblock %}
+</body>
+<footer>
+  <div id="links">
+    <a href="https://github.com/AColocho/classifying_car_crash_photos">Github</a>
+  </div>
+</footer>
+</html>

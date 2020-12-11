@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class='main-intro'>
+    <h1>Hello I'm Daisy!</h1>
+    <p>My purpose is to help determine if an image shows a car crash. By getting better at this, I will be able to help 
+        emergency services respond to car crashes faster. This can help save more lives. 
+    </p>
+    
+    <p>
+        I am still in my beginning stages, so I still have a lot to learn. You can find a link to my source code
+        at the bottom of the page.
+    </p>
+    <h3>Upload a picture to test me!</h3>
+    <p>Don't worry, the picture you upload will be used just for this session. The picture will be deleted at the end of the test.</p>
+    <form method="POST" enctype=multipart/form-data>
+        <input type="file" name="img" accept="image/*">
+        <button>Submit</button>
+    </form>
+</div>
+{% endblock %}
